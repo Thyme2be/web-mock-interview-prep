@@ -194,7 +194,7 @@ const Agent = ({
               )}
             />
 
-            <span>{isCallInactiveOrFinished ? "Call" : ". . ."}</span>
+            <span>{isCallInactiveOrFinished ? "Call" : "Connecting..."}</span>
           </button>
         ) : (
           <button className="btn-disconnect" onClick={handleDisconnect}>
