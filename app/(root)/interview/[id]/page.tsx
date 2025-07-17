@@ -40,7 +40,6 @@ const page = async ({ params }: RouteParams) => {
         type="interview"
         questions={interview.questions}
       />
-      ;
     </>
   );
 };
