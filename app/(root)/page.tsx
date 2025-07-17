@@ -1,7 +1,10 @@
 import InterviewCard from "@/components/InterviewCard";
 import { Button } from "@/components/ui/button";
 import { getCurrentUser } from "@/lib/actions/auth.action";
-import { getInterviewsByUserId, getLatestInterviews } from "@/lib/actions/general.action";
+import {
+  getInterviewsByUserId,
+  getLatestInterviews,
+} from "@/lib/actions/general.action";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -24,6 +27,10 @@ const page = async () => {
           <h2>Get Interview-Ready with AI-Powered Practice & Feedback</h2>
           <p className="text-lg">
             Practice on real interview question & get instant feedback
+          </p>
+          <p className=" font-bold text-lg bg-red-700/20 p-2 rounded-xl ">
+            Thyme Calling!: <span className=" text-yellow-300 underline ">Service is currently unavailable</span> due to maximum
+            limit of AI usage. Sorry for the inconvenient.
           </p>
           <Button asChild className=" btn-primary max-sm:w-full ">
             <Link href={"/interview"}>Start an Interview</Link>
